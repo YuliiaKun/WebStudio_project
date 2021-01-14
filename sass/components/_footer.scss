@@ -68,7 +68,7 @@
 }
 
 .footer-input {
-  min-width: 358px;
+  min-width: 450px;
   padding: 15px;
   margin-right: 12px;
 
@@ -79,6 +79,9 @@
   background-color: transparent;
 
   color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 }
 
 .footer-input::placeholder {

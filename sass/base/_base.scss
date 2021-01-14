@@ -14,6 +14,10 @@ body {
   font-family: $primary-font;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;

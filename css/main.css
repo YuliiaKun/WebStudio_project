@@ -413,8 +413,8 @@ nav {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/main_background_img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_background_img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/main_background_img_mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/main_background_img_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -428,6 +428,36 @@ nav {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../img/main_background_img_mob@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 577px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 577px), screen and (min-resolution: 192dpi) and (min-width: 577px), screen and (min-resolution: 2dppx) and (min-width: 577px) {
+  .hero .hero {
+    background-image: url("../../img/main_background_img_tab.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 577px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 577px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 577px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 577px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 577px) and (min-resolution: 192dpi), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 577px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 577px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 577px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 577px) and (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 577px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 577px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 577px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../img/main_background_img_tab@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 960px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 960px), screen and (min-resolution: 192dpi) and (min-width: 960px), screen and (min-resolution: 2dppx) and (min-width: 960px) {
+  .hero .hero {
+    background-image: url("../../img/main_background_img.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 960px) and (min-resolution: 192dpi), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 960px) and (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 960px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 960px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 960px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../img/main_background_img@2x.jpg");
   }
 }
 
@@ -930,12 +960,43 @@ nav {
 }
 
 .portfolio-section {
-  padding-bottom: 94px;
-  padding-top: 92px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-bottom: 94px;
+    padding-top: 92px;
+  }
 }
 
 .filters-container {
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-container {
+    margin-bottom: 50px;
+  }
 }
 
 .filters-container li:not(:last-child) {
@@ -972,9 +1033,30 @@ nav {
   margin: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .portfolio {
-  width: 370px;
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    width: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .portfolio-card {

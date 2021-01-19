@@ -5,13 +5,6 @@
   }
 }
 
-// .header-nav {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
 nav {
   display: flex;
   align-items: center;
@@ -51,6 +44,25 @@ nav {
   display: none;
 }
 
+.icon-menu {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close-menu {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-menu:hover,
+.icon-menu:focus,
+.icon-close-menu:hover,
+.icon-close-menu:focus {
+  fill: $accent-color;
+}
+
 .menu-container {
   background-color: $primary-white-color;
   text-align: center;
@@ -58,6 +70,7 @@ nav {
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
+    z-index: 999;
     top: 100%;
     left: 0;
     width: 100%;
@@ -201,19 +214,23 @@ nav {
 }
 
 .nav-contact {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
+
+  @media screen and (min-width: 1200px) {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 

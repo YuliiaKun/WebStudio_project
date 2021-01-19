@@ -203,6 +203,10 @@ textarea::placeholder {
 }
 
 .checkbox-text {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;

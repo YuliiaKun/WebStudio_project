@@ -1519,6 +1519,12 @@ textarea::placeholder {
   color: #757575;
 }
 
+@media screen and (max-width: 767px) {
+  .checkbox-text {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .checkbox-text {
     font-size: 14px;

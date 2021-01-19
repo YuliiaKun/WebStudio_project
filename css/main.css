@@ -835,7 +835,12 @@ nav {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -880,8 +885,10 @@ nav {
   letter-spacing: 0.03em;
 }
 
-.footer-soc {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .footer-soc {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1189,7 +1196,7 @@ nav {
 }
 
 .portfolio-content {
-  padding: 20px 24px;
+  padding: 20px 5px 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;

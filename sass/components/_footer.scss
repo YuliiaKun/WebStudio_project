@@ -4,7 +4,9 @@
 
   background-color: $bgr-primary-dark;
 
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   .container {
     @media screen and (min-width: 1200px) {
@@ -43,7 +45,9 @@
 }
 
 .footer-soc {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;

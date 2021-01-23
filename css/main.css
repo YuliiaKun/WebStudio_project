@@ -584,6 +584,12 @@ nav {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .subtitle {
+    text-align: center;
+  }
+}
+
 .text {
   margin-top: 0;
   margin-bottom: 0;
